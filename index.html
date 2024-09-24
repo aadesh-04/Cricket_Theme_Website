@@ -1,89 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CRIX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <div class="hero">
-            <h1>Cricket Fever</h1>
-            <p>Welcome to the world of cricket!</p>
+    <div id="nav">
+        <img src="Screenshot__221_-removebg-preview.png"
+            alt="">
+        <h4>RECORDS</h4>
+        <h4>CRICKET LESSONS</h4>
+        <h4>CRICKET WEARS</h4>
+        <h4>LEAGUES</h4>
+        <h4>CONTACT US</h4>
+    </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <video src="./videoplayback (online-video-cutter.com).mp4" muted autoplay loop> </video>
+    <div id="main">
+        <div id="page1">
+            <h1>BAT.BOWL.REPEAT</h1>
+            <h2>WELCOME TO CRIX FAMILY!</h2>
+            <P>Cricket Records and Information Xplorer (CRIX) is a dynamic destination that provides the latest match updates,
+                 player statistics, and interactive features, creating an engaging platform for cricket enthusiasts to connect and share.</P>
+                <div id="arrow">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
         </div>
-    </header>
+        <div id="page2">
+            <div id="scroller">
 
-    <section id="upcoming-matches">
-        <h2>Upcoming Matches</h2>
-        <div class="match" data-date="2024-09-30T14:00:00">
-            <h3>Team A vs Team B</h3>
-            <p class="countdown"></p>
-        </div>
-        <div class="match" data-date="2024-10-02T16:00:00">
-            <h3>Team C vs Team D</h3>
-            <p class="countdown"></p>
-        </div>
-    </section>
 
-    <section id="live-highlights">
-        <h2>Live Match Highlights</h2>
-        <div class="slider">
-            <div class="highlight">Highlight 1</div>
-            <div class="highlight">Highlight 2</div>
-            <div class="highlight">Highlight 3</div>
-        </div>
-    </section>
+                <div id="scroller1">
+                    <h4>RECORDS</h4>
+                    <h4>CRICKET LESSONS</h4>
+                    <h4>CRICKET WEARS</h4>
+                    <h4>LEAGUES</h4>
+                    <h4>CONTACT US</h4>
+                </div>
+                <div id="scroller1">
+                    <h4>RECORDS</h4>
+                    <h4>CRICKET LESSONS</h4>
+                    <h4>CRICKET WEARS</h4>
+                    <h4>LEAGUES</h4>
+                    <h4>CONTACT US</h4>
+                </div>
 
-    <section id="player-profiles">
-        <h2>Player Profiles</h2>
-        <div class="player-card">
-            <div class="card-content">
-                <h3>Player 1</h3>
-                <p>Batting: 1000 runs</p>
-                <p>Bowling: 50 wickets</p>
+            </div>
+            <div id="about-us">
+                <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+
+                <div id="about-us2">
+                    <h3>ABOUT US</h3>
+                    <p>Welcome to CRIX, your ultimate destination for all things cricket! Our platform is dedicated to bringing fans 
+                        the latest news, match updates, and in-depth statistics. With an interactive experience, we aim to connect
+                         cricket enthusiasts and foster a vibrant community. Join us as we celebrate the spirit of the game!</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1624193757636-b829dfa06a1b?q=80&w=1896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+            </div>
+            <div id="cards-container">
+
+                <div class="card" id="card1">
+                    <div class="overlay">
+                        <h4>RECORDS</h4>
+                        <p>Dive into the world of cricket records, showcasing the highest scores, fastest balls, and most wickets. 
+                            Explore historical milestones and remarkable achievements that define the spirit of the game.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="card" id="card2">
+                    <div class="overlay">
+                        <h4>CRICKET LESSONS</h4>
+                        <p>Master the art of cricket with comprehensive lessons covering batting techniques, bowling styles, and fielding strategies. 
+                            Whether you're a beginner or looking to refine your skills, these lessons are designed to elevate your game.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="card" id="card3">
+                    <div class="overlay">
+                        <h4>LEAGUES</h4>
+                        <p>Discover the excitement of cricket leagues worldwide, from local tournaments to international championships.
+                             Stay updated on fixtures, teams, and results as players compete for glory on the global stage.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="player-card">
-            <div class="card-content">
-                <h3>Player 2</h3>
-                <p>Batting: 800 runs</p>
-                <p>Bowling: 30 wickets</p>
+        <div id="green-div">
+            <img src="https://ouch-cdn2.icons8.com/KgfWC6MGeH04_TXdJJW-ux6JRqDBAp61B5__o1BR1bs/rs:fit:368:492/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDQ1/L2JkNDdhYjNmLWI1/ZGYtNDgwMy05ZTU4/LWY4ODcyNjc5ZjMz/ZC5zdmc.png"
+                alt="">
+            <h4>Sign up for CRIX cricket news. <br>Straight to your Inbox</h4>
+            <img src="https://ouch-cdn2.icons8.com/KgfWC6MGeH04_TXdJJW-ux6JRqDBAp61B5__o1BR1bs/rs:fit:368:492/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDQ1/L2JkNDdhYjNmLWI1/ZGYtNDgwMy05ZTU4/LWY4ODcyNjc5ZjMz/ZC5zdmc.png"
+                alt="">
+        </div>
+        <div id="page3">
+            <img id="colon1" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg"
+                alt="">
+            <p>I hate losing and cricket being my first love, once I enter the ground it's a different zone altogether and that
+                 hunger for winning is always there.
+                 <br><cite>-SACHIN TENDULKAR</cite></p>
+            <img id="colon2" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg">
+
+        </div>
+        <div id="page4">
+            <h1>WHAT ARE YOU WAITING FOR</h1>
+            <div class="elem">
+                <h2>RECORDS</h2>
+                <img src="https://wallpapers.com/images/hd/indian-cricket-player-world-4k-nq2ctc7fwivw40g7.jpg" alt="">
+            </div>
+            <div class="elem">
+                <h2>CRICKET LESSONS</h2>
+                <img src="https://images.unsplash.com/photo-1519847944462-d2229b64154d?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="elem">
+                <h2>LEAGUES</h2>
+                <img src="https://assets.gqindia.com/photos/5ce3a36ca24632705678783d/4:3/w_1440,h_1080,c_limit/World-Cup-top-image.jpg" alt="">
             </div>
         </div>
-    </section>
-
-    <section id="cricket-history">
-        <h2>Cricket History</h2>
-        <div class="timeline">
-            <div class="event">1830: First recorded match</div>
-            <div class="event">1975: First ODI World Cup</div>
-            <div class="event">2007: First T20 World Cup</div>
+        <div id="footer">
+            <img src="https://ouch-cdn2.icons8.com/KgfWC6MGeH04_TXdJJW-ux6JRqDBAp61B5__o1BR1bs/rs:fit:368:492/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDQ1/L2JkNDdhYjNmLWI1/ZGYtNDgwMy05ZTU4/LWY4ODcyNjc5ZjMz/ZC5zdmc.png" alt="">
+            <div id="f1">
+                <img src="https://images.CRIX-cricket.com/image/private/t_q-best/v1698133655/prd/assets/logos/CRIX-white-logo.svg" alt="">
+            </div>
+            <div id="f2">
+                <h3>RECORDS</h3>
+                <h3>CRICKET LESSONS</h3>
+                <h3>LEAGUES</h3>
+            </div>
+            <div id="f3">
+                <h3>ABOUT US</h3>
+                <h3>CRICKET LESSONS</h3>
+                <h3>CONTACT US</h3>
+            </div>
+            <div id="f4">
+                <h4>VISHWAKARMA INSTITUTE OF INFORMATION TECHNOLOGY, KONDHWA BK, PUNE, MAHARASHTRA, INDIA, 411048
+                </h4>
+            </div>
         </div>
-    </section>
-
-    <section id="gallery">
-        <h2>Iconic Moments</h2>
-        <div class="gallery">
-            <div class="gallery-item">Moment 1</div>
-            <div class="gallery-item">Moment 2</div>
-            <div class="gallery-item">Moment 3</div>
-        </div>
-    </section>
-
-    <section id="quiz">
-        <h2>Cricket Quiz</h2>
-        <div class="quiz-question">
-            <p>Who won the 2019 Cricket World Cup?</p>
-            <button>Team A</button>
-            <button>Team B</button>
-        </div>
-    </section>
-
-    <footer>
-        <p>Cricket Website &copy; 2024</p>
-    </footer>
-
-    <script src="script.js"></script>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+    
 </body>
+
 </html>

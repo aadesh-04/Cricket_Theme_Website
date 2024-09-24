@@ -1,26 +1,99 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const matches = document.querySelectorAll('.match');
-    matches.forEach(match => {
-        const matchDate = new Date(match.dataset.date);
-        const countdownElement = match.querySelector('.countdown');
+let cursor = document.querySelector("#cursor")
+let blur = document.querySelector("#cursor-blur")
+document.addEventListener("mousemove", function(dets){
+    cursor.style.left = dets.x+ 10 +"px"
+    cursor.style.top = dets.y+"px"
+    blur.style.left = dets.x+ -175 +"px"
+    blur.style.top = dets.y+ -175+"px"
+    
+})
 
-        function updateCountdown() {
-            const now = new Date();
-            const timeRemaining = matchDate - now;
-            if (timeRemaining < 0) {
-                countdownElement.innerText = "Match Started!";
-                clearInterval(countdownInterval);
-                return;
-            }
+let h4 = document.querySelectorAll("#nav h4")
+h4.forEach(function(elem){
+    elem.addEventListener("mouseenter", function(){
+        cursor.style.scale = 2;
+        cursor.style.border = "1px solid #fff";
+        cursor.style.backgroundColor = "transparent";
+    })
+    elem.addEventListener("mouseleave", function(){
+        cursor.style.scale = 1;
+        cursor.style.border = "0px solid #95C11E";
+        cursor.style.backgroundColor = "#95C11E";
+    })
+})
 
-            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+gsap.to("#nav", {
+    backgroundColor: "black",
+    height: "90px",
+    duration: 0.5,
+    scrollTrigger: {
+        trigger: "#nav",
+        scroller: "body",
+        start: "top -10%",
+        end: "top -11%",
+        scrub: 1
+    }
+})
 
-            countdownElement.innerText = `${hours}h ${minutes}m ${seconds}s`;
-        }
+gsap.to("#main",{
+    backgroundColor: "#000",
+    scrollTrigger:{
+        trigger:"#main",
+        scroller: "body",
+        start : "top -25%",
+        end: "top -70%",
+        scrub: 1
+    }
+})
 
-        updateCountdown();
-        const countdownInterval = setInterval(updateCountdown, 1000);
-    });
-});
+gsap.from("#about-us img, #about-us2", {
+    y: 90,
+    opacity: 0,
+    duration: 1.5,
+    
+    scrollTrigger: {
+        trigger: "#about-us",
+        scroller: "body",
+        start: "top 60%", 
+        end: "top 58%",
+        scrub : 2,
+    }
+})
+
+
+gsap.from("#colon1", {
+    y: -70,
+    x: -70,
+    scrollTrigger: {
+        trigger: "#colon1",
+        scroller: "body",
+        start: "top 55%",
+        end: "top 45%",
+        scrub: 3,
+        
+    }
+})
+gsap.from("#colon2", {
+    y: 70,
+    x: 70,
+    scrollTrigger: {
+        trigger: "#colon1",
+        scroller: "body",
+        start: "top 55%",
+        end: "top 45%",
+        scrub: 3,
+        
+    }
+})
+
+gsap.from("#page4 h1",{
+    y: 24,
+    scrollTrigger: {
+        trigger: "#page4 h1",
+        scroller: "body",
+        start: "top 65%",
+        end: "top 50%",
+        scrub: 3,
+        
+    }
+})
