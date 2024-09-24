@@ -1,85 +1,76 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f5;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-    background-image: url('images/cricket-bg.jpg');
-    background-size: cover;
+    background: url('cricket-stadium.jpg') no-repeat center center/cover;
+    height: 60vh;
     color: white;
-    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-header h1 {
+.hero h1 {
     font-size: 3rem;
-    margin: 0;
 }
 
-header p {
-    font-size: 1.2rem;
+#upcoming-matches, #live-highlights, #player-profiles, #cricket-history, #gallery, #quiz {
+    padding: 2rem;
+    background: #f9f9f9;
+    margin: 1rem;
 }
 
-nav {
-    margin-top: 20px;
-}
-
-nav .btn {
-    background-color: #28a745;
-    padding: 10px 20px;
-    margin: 10px;
-    color: white;
-    border: none;
+.match, .player-card, .gallery-item, .highlight {
+    background: white;
+    padding: 1rem;
     border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav .btn:hover {
-    background-color: #218838;
+.player-card {
+    transition: transform 0.3s;
 }
 
-#about {
-    text-align: center;
-    padding: 50px;
+.player-card:hover {
+    transform: scale(1.05);
 }
 
-#about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.timeline {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-#features {
-    background-color: #fff;
-    padding: 50px;
+.event {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    margin: 0.5rem 0;
 }
 
-.features-container {
+.gallery {
     display: flex;
     justify-content: space-around;
 }
 
-.feature-box {
-    background-color: #e3f2fd;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    transition: transform 0.3s;
+.gallery-item {
+    background: #e0e0e0;
+    padding: 1rem;
+    margin: 0.5rem;
+    transition: background 0.3s;
 }
 
-.feature-box:hover {
-    transform: scale(1.05);
+.gallery-item:hover {
+    background: #d4d4d4;
 }
 
 footer {
-    background-color: #343a40;
-    color: white;
     text-align: center;
-    padding: 20px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    padding: 1rem;
+    background: #007300;
+    color: white;
 }
