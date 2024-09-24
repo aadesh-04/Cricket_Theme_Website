@@ -6,3 +6,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+function nextStep(step) {
+    document.querySelectorAll('.step').forEach(function(el) {
+        el.style.display = 'none';
+    });
+    document.querySelector('.step-' + step).style.display = 'block';
+}
+
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Registration Submitted');
+});
