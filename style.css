@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-image: url('images/cricket-bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav .btn {
+    background-color: #28a745;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+nav .btn:hover {
+    background-color: #218838;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 50px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Features Section */
+#features {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-box {
+    background-color: #e3f2fd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
