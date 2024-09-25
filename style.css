@@ -15,7 +15,7 @@ html,body{
 #cursor{
     height: 20px;
     width: 20px;
-    background-color: #95C11E;
+    background-color: #1E90FF;
     border-radius: 50%;
     position: fixed;
     z-index: 99;
@@ -24,7 +24,7 @@ html,body{
 #cursor-blur{
     height: 350px;
     width: 350px;
-    background-color: #96c11e3c;
+    background-color: #7fb7ee66;
     border-radius: 50%;
     position: fixed;
     filter: blur(50px);
@@ -98,7 +98,7 @@ video{
     color: black;
     top: -6px;
     left: -6px;
-    -webkit-text-stroke: 2px #95C11E;
+    -webkit-text-stroke: 2px #1E90FF;
     z-index: -1;
 }
 
@@ -109,9 +109,11 @@ video{
     margin-bottom: 20px;
 }
 #page1 p{
+    font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 800;
     width: 45.3%;
+    line-height: 1.6; 
 }
 
 
@@ -138,7 +140,7 @@ video{
 
 #page1 #arrow:hover{
     scale: 0.5;
-    background-color: #95C11E;
+    background-color: #1E90FF;;
 
 }
 
@@ -179,11 +181,11 @@ video{
     margin-right: 10px;
     transition: all linear 0.5s;
     color: transparent;
-    -webkit-text-stroke: 2px #95C11E;
+    -webkit-text-stroke: 2px #1E90FF;
 }
 
 #scroller h4:hover{
-    color: #95C11E;
+    color: #1E90FF;
 }
 
 @keyframes scroll {
@@ -227,6 +229,7 @@ video{
 }
 
 #about-us2 p{
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 26px;
 }
@@ -255,22 +258,22 @@ video{
 }
 
 #card1{
-    background-image: url(https://images.unsplash.com/photo-1603722039047-bc9997bfa963?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(images/Records\ -\ Top.jpg);
 
 }
 
 #card2{
-    background-image: url(https://images.unsplash.com/photo-1580831800257-f83135932664?q=80&w=1960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(images/Cricket\ Lessons\ -\ Top.jpg);
 }
 
 #card3{
-    background-image: url(https://wallpapers.com/images/featured/indian-cricket-g8wl4uwm62bu7830.jpg);
+    background-image: url(images/Leagues\ -\ Top.jpg);
 }
 
 .overlay{
     height: 100%;
     width: 100%;
-    background-color: #95C11E;
+    background-color: #1E90FF;
     padding: 30px;
     padding-top: 90px;
     opacity: 0;
@@ -279,6 +282,7 @@ video{
 }
 
 .overlay h4{
+    font-family: 'Oswald', sans-serif;
     color: #000;
     font-size: 30px;
     text-transform: uppercase;
@@ -288,8 +292,14 @@ video{
 }
 
 .overlay p{
+   
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    font-weight: 400;
+    line-height: 1.8; 
     color: #000;
-    font-size: 15px;
+    
+    
 }
 
 .card:hover .overlay{
@@ -305,10 +315,11 @@ video{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to left bottom , yellow,green);
+    background: linear-gradient(to left bottom ,  #87CEFA , #1E90FF);
 }
 
 #green-div h4{
+    font-family: 'Oswald', sans-serif;
     width: 50%;
     color: #000;
     font-size: 27px; 
@@ -335,6 +346,7 @@ video{
 }
 
 #page3>p{
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 800;
     width: 45%;
@@ -362,7 +374,7 @@ video{
 #page4{
     height: 50vh;
     width: 100%;
-  position: relative;
+   position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -379,9 +391,10 @@ video{
 }
 
 .elem h2{
+    font-family: 'Bebas Neue', sans-serif;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to left bottom, yellow, green);
+    background: linear-gradient(to left bottom, #87CEFA , #1E90FF);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -420,10 +433,11 @@ video{
     -webkit-text-stroke: 2px white;
 }
 
-#footer{
+
+#footer {
     height: 40vh;
     width: 100%;
-    background: linear-gradient(to left bottom,#95C11E, green, yellow);
+    background: linear-gradient(to left bottom, #1e3c72, #2a5298, #6dd5ed); /* Blue theme gradient */
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -431,6 +445,7 @@ video{
     gap: 150px;
     padding: 0 100px;
 }
+
 
 #footer>img{
     position: absolute;
@@ -496,4 +511,8 @@ text-decoration: none;
     background-color: white;
     color: #95C11E;
 }
+
+
+
+ 
 
